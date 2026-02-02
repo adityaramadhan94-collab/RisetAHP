@@ -142,6 +142,7 @@ Metode AHP meminta Bapak/Ibu/Saudara/i untuk melakukan perbandingan berpasangan 
 
 <label>Status Responden:</label>
 <input type="radio" name="status" value="Dosen"> Dosen
+<input type="radio" name="status" value="Kepala Sekolah"> Kepala Sekolah
 <input type="radio" name="status" value="Guru"> Guru
 <input type="radio" name="status" value="Mahasiswa"> Mahasiswa
 <br><br>
@@ -592,7 +593,7 @@ function submitJawabanResponden() {
     return;
   }
 
-  if ((status === "Dosen" || status === "Guru") && !pengalaman) {
+  if ((status === "Dosen" || status === "Kepala Sekolah" || status === "Guru") && !pengalaman) {
     alert("Pengalaman mengajar wajib diisi");
     return;
   }
@@ -669,7 +670,7 @@ document.addEventListener("DOMContentLoaded", function() {
     radio.addEventListener("change", function() {
       const status = document.querySelector('input[name="status"]:checked')?.value || "";
       // Munculkan hanya jika Dosen atau Guru
-      if(status === "Dosen" || status === "Guru") {
+      if(status === "Dosen" || status === "Kepala Sekolah"|| status === "Guru") {
         document.getElementById("pengalamanBox").style.display = "block";
       } else {
         document.getElementById("pengalamanBox").style.display = "none";
@@ -721,5 +722,6 @@ function resetSemuaForm() {
 
 </body>
 </html>
+
 
 
