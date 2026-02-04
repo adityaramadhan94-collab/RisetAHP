@@ -162,7 +162,7 @@ Metode AHP meminta Bapak/Ibu/Saudara/i untuk melakukan perbandingan berpasangan 
 
 
 <h2>Bagian A – Perbandingan Berpasangan Antar Dimensi Critical Digital Literacy (CDL)</h2>
-<div class="petunjuk"><b>Petunjuk Pengisian:</b> Pada bagian ini, Bapak/Ibu/Saudara/i diminta untuk membandingkan dua dimensi CDL secara berpasangan. Pilih dimensi yang lebih penting untuk dikuasai oleh calon guru vokasi saat ini, kemudian tentukan nilai/bobot tingkat kepentingannya menggunakan skala yang tersedia. Skala penilaian menunjukkan tingkat kepentingan, mulai dari sama penting hingga mutlak lebih penting.
+<div class="petunjuk"><b>Petunjuk Pengisian:</b> Pada bagian ini, Bapak/Ibu/Saudara/i diminta untuk membandingkan dua dimensi Critical Digital Literacy (CDL) secara berpasangan. Pilih dimensi yang dinilai lebih penting untuk dikuasai oleh calon guru vokasi saat ini, kemudian tentukan nilai atau bobot tingkat kepentingannya berdasarkan skala yang tersedia. Skala penilaian menunjukkan tingkat kepentingan, mulai dari sama penting hingga mutlak lebih penting.
 <table border="1" cellpadding="3" cellspacing="0">
   <tr><th>Nilai</th><th>Definisi</th></tr>
   <tr><td align="center">1</td><td>Sama pentingnya</td></tr>
@@ -513,7 +513,7 @@ if(!pertanyaanEl || !labelA || !labelB) {
 const pasangan = pasanganDimensi[index];
 if(!pasangan) return;
   
-pertanyaanEl.textContent = "Jika kedua dimensi di bawah ini dibandingkan, menurut Bapak/Ibu/Saudara/i, dimensi mana yang paling penting untuk dikuasai oleh calon guru vokasi saat ini?";
+pertanyaanEl.textContent = "Berdasarkan perbandingan berikut, dimensi manakah yang dinilai lebih penting untuk dikuasai oleh calon guru vokasi saat ini?";
  
 
   labelA.querySelector("span").textContent = pasangan[0];
@@ -729,6 +729,7 @@ function resetSemuaForm() {
 
 </body>
 </html>
+
 
 
 
